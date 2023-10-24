@@ -1,0 +1,608 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700&display=swap');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --text-color:#BCA37F;
+    --main-color:#FFF2D8;
+}
+body{
+    background-color:var(--main-color);
+  
+
+}
+header .nav  { 
+    display: flex;
+    flex-flow: row;
+  
+    padding-top: 20px;
+    width: 100%;
+    height: 100px;
+    
+  
+  }
+ .navbar{
+    width:870px;
+    height: 150px;
+    margin-top: 30px;
+  }
+
+header .nav img  {
+    width: 150px;
+    height: 60px;
+    
+    padding-right: 30px;
+    margin-left:30px ;
+
+}
+/* 
+header .navbar li {
+    display: inline-block;
+    padding: 10px 10px;
+} */
+
+
+.navbar a {
+    text-decoration: none;
+    list-style: none;
+    margin: 0 10px; /* Adjust the margin as needed */
+    font-size: 20px;
+    color: var(--text-color);
+    font-weight: 500;
+    padding-top: 10px;
+    position: relative;
+    display: inline-block;
+   
+    
+    
+   
+
+}
+
+
+
+
+
+/* kif bade a3mel lborder animation lal nav item  */
+header .nav .navbar a {
+    position: relative;
+   
+ 
+    /* font-size: 1.1em; */
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transition: 0.3s;
+    /* padding: 3px 3px; */
+
+}
+header .nav .navbar a:hover{
+    color: darkcyan;
+    letter-spacing: 0.2em;
+
+
+}
+header .nav .navbar a span{
+    position: absolute;
+    display: block;
+    background: darkcyan;
+}
+header .nav .navbar a span:nth-child(1){
+    left: 0;
+    top: 0;
+    width: 50.5%;
+    height: 1.5px;
+    transform-origin: left;
+    transform: scaleX(0);
+   transition:  0.5s;
+   transition-delay: 0.4s;
+}
+header .nav .navbar a:hover span:nth-child(1){
+    transform: scalex(1);
+    transform-origin: right;
+}
+header .nav .navbar a span:nth-child(2){
+    right: 0;
+    top: 0;
+    width: 50.5%;
+    height: 1.5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition:  0.5s;
+    transition-delay: 0.4s;
+}
+header .nav .navbar a:hover span:nth-child(2){
+    transform: scalex(1);
+    transform-origin: left;
+}
+header .nav .navbar a span:nth-child(3){
+    right: 0;
+    top: 0;
+    width:1.5px;
+    height: 100%;
+    transform: scaley(0);
+    transition:  0.5s;
+    transition-delay: 0.4s;
+}
+header .nav .navbar a:hover span:nth-child(3){
+    transform: scaley(1);
+    transform-origin: top;
+}
+header .nav .navbar a span:nth-child(4){
+    left: 0;
+    top: 0;
+    width:1.5px;
+    height: 100%;
+    transform: scaley(0);
+    transition:  0.5s;
+    transition-delay: 0.4s;
+}
+header .nav .navbar a:hover span:nth-child(4){
+    transform: scaley(1);
+    transform-origin: top;
+}
+header .nav .navbar a span:nth-child(5){
+    left: 0;
+    bottom: 0;
+    width: 50.5%;
+    height: 1.5px;
+    transform-origin: right;
+    transform: scaleX(0);
+   transition:  0.5s;
+   transition-delay: 0.8s;
+}
+header .nav .navbar a:hover span:nth-child(5){
+    transform: scalex(1);
+    transform-origin: left;
+}
+header .nav .navbar a span:nth-child(6){
+    right: 0;
+    bottom: 0;
+    width: 50.5%;
+    height: 1.5px;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition:  0.5s;
+    transition-delay: 0.8s;
+}
+header .nav .navbar a:hover span:nth-child(6){
+    transform: scalex(1);
+    transform-origin: right;
+    
+}
+
+
+.header-icon{
+    margin-top: 40px;
+   
+}
+
+
+.header-icon i {
+    margin: 0 20px; /* Adjust the margin as needed */
+}
+
+.nav .ii span:nth-child(1){
+    padding: 0 3px;
+    background-color: brown;
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+    position: relative;
+    top: 15px;
+}
+
+
+.chair-text {
+    width:1000px;
+    height: 70vh;
+    margin: auto;
+    margin-top: 30px;
+   background-color: #EAD7BB;
+   border-radius: 15px;
+}
+.chair-text .big-cart{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  
+    align-items: end;
+    
+}
+.chair-text .big-cart .chair-text-info h2{
+   margin-bottom: 80px;
+   color:var(--text-color);
+   font-size: 40px;
+}
+.chair-text .big-cart .chair-text-info button{
+    border-radius: 20px;
+    background-color: var(--main-color);
+    padding: 5px 5px;
+}
+
+.chair-text .big-cart .chair-text-img img{
+    margin-top: 80px;
+    border-radius: 10px 25px;
+    
+}
+
+
+#shop {
+    width: 100%;
+    height: 100vh;
+   padding: 2rem 0rem;
+}
+#shop .title-h2  h2{
+    font-weight: 600;
+    color:#113946;
+    text-align: center;
+
+   
+   
+ 
+    
+  
+}
+#shop  hr{
+    background-color: #010813;
+    width: 100px;
+    height: 3px;
+   
+    margin: auto;
+    margin-top: 10px;
+    
+    
+
+
+  
+}
+#shop .title-h2:hover hr{
+    width: 150px;
+    transition: width 0.3s ease; 
+    
+}
+.container1 {
+
+    margin:0px 100px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 30px;
+
+
+}
+/* .container-chair {
+    position: relative;
+} */
+.container-chair-img img{
+    width: 280px;
+    height: 280px;
+
+}
+
+.container-chair-info {
+  position: relative;
+   
+}
+.container-chair-info i {
+    position: absolute;
+    background: #113946;
+    font-size: 20px;
+    padding: 5px;
+    left: 90%;
+    color: red;
+    visibility: hidden;
+    transition: visibility 0.3s ease;
+    
+  
+    
+   
+}
+
+/* The + symbol in CSS is known as the adjacent sibling combinator. It is used to select an element that is directly preceded by another specific element. In your CSS rule:
+
+css
+Copy code
+.container-chair-img:hover + .container-chair-info i {
+    visibility: visible;
+}
+.container-chair-img:hover selects the .container-chair-img when it is being hovered over.
++ is the adjacent sibling combinator, indicating that you want to select an element that is immediately following the hovered .container-chair-img.
+.container-chair-info i is the element you want to select, which is the <i> element inside the .container-chair-info. */
+
+.container-chair-img:hover + .container-chair-info i {
+    visibility: visible; /* Make the icon inside .container-chair-info visible when hovering over the image */
+}
+
+
+
+/* start  section about */
+
+#About{
+    width:100%;
+    height:100vh;
+
+}
+#About .container2{
+    width: 80%;
+    margin: auto;
+    
+}
+
+#About .container2 .first-grid {
+    display: grid;
+    grid-template-columns: 40% 15% 15% ;
+    grid-column-gap: 20px;
+
+}
+.first-grid-frac {
+    background-color:#f5debe;
+    border-radius: 20px;
+    height: 380px;
+}
+
+.first-grid-frac-dyalog{
+    display: flex;
+    position: relative;
+}
+.first-grid-frac-dyalog i {
+   padding-top: 25px;
+   padding-left: 20px;
+   padding-right: 25px;
+   font-size: 35px;
+   color: #113946;
+
+} 
+ .first-grid-frac-dyalog span i {
+  margin-left: -40px;
+}
+
+.first-grid-frac-dyalog h2{
+    position: absolute;
+    left: 20%;
+    top: 30%;
+}
+.first-grid-frac-dyalog h5{
+    position: absolute;
+    left: 20%;
+    top: 80%;
+}
+.first-grid-frac p{
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.first-grid-frac .blanks{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+    text-decoration: none;
+    list-style: none;
+    margin-top: 40px;
+    margin-left: 250px;
+}
+.first-grid-frac .blanks li {
+  width: 28px;
+  background-color: #010813;
+  height: 1px;
+}
+
+.first-grid .second-frac{
+    height: 380px;
+  
+
+}
+
+
+.second-frac-img{
+    position: relative;
+
+}
+.second-frac-img img{
+    border-radius: 15%;
+}
+.second-frac-info{
+    position: absolute;
+    top: 18px;
+    left: 18px;
+}
+.first-grid .third-frac{
+    margin-left: 150px;
+}
+
+
+/* third first grid  */
+
+.first-grid .third-frac{
+    height: 380px;
+  
+
+}
+
+
+.third-frac-img{
+    position: relative;
+
+}
+.third-frac-img img{
+    border-radius: 15%;
+}
+.third-frac-info{
+    position: absolute;
+    top: 18px;
+    left: 18px;
+}
+.first-grid .third-frac{
+    margin-left: 150px;
+}
+/* start bl transition  */
+.offers{
+    padding-top: 100px;
+    width: 100%;
+    margin: auto;
+    /* background-color: red; */
+}
+
+.contant-offers{
+    display: flex;
+    
+    justify-content:space-between;
+    /* background-color: rgb(197, 176, 176); */
+
+
+}
+
+.about-offer{
+    text-align: center;
+    width: 200px;
+    border-right:1px solid var(--text-color) ;
+    transform: 1s; 
+  
+    /* background-color: red; */
+}
+.last-offer{
+    border: none;
+}
+
+.img-offer{
+    background-image: url(../images/service-icon.png);
+    height: 60px;
+    background-repeat: no-repeat;
+}
+.img-offer1{
+    /* text-align: center; */
+    transition: all .5s;
+    background-position: center 5px;
+}
+.about-offer:hover .img-offer1{
+    background-position: center -90px;
+}
+
+.img-offer2{
+    transition: all .5s;
+    background-position:center -180px;
+}
+.about-offer:hover .img-offer2{
+    background-position: center -270px;
+}
+.img-offer3{
+    transition: all .5s;
+    background-position: center -366px;
+}
+.about-offer:hover .img-offer3{
+    background-position: center -460px;
+}
+.img-offer4 {
+    transition: all .5s;
+    background-position: center -549px;
+}
+
+.about-offer:hover .img-offer4{
+    background-position: center -639px;
+}
+
+.img-offer5{
+    transition: all .5s;
+    background-position: center -734px;
+}
+.about-offer:hover .img-offer5{
+    background-position: center -824px;
+}
+
+
+
+/* end section about  */
+
+
+/* start cart section */
+
+
+
+#Newarrival{
+    margin-top: 16rem;
+    height: 100vh;
+    width: 100%;
+}
+#Newarrival h2{
+    text-align: center;
+    font-weight: 600;
+    color: #113946;
+    transition: 3s;
+
+}
+
+#Newarrival hr {
+    width: 80px;
+    margin: auto;
+    height: 5px;
+    background-color: #010813;
+    
+}
+#Newarrival .product-list ul{
+    text-align: center;
+}
+#Newarrival .product-list ul li{
+    display: inline-block;
+    margin: auto;
+    margin: 20PX 20PX;
+}
+
+#Newarrival .product-conatiner{
+    width: 800px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+
+}
+
+.product-img , .front-img , .back-img {
+    width: 250px;
+    height: 250px;
+}
+.product-img{
+    
+    position: relative;
+    transition: all 1s;
+    transform-style: preserve-3d;/*kermel ykoun ande bo3d telid wshouf daher lback image wteshte8l lbackface-viv lbo3d telit howe semek z*/
+}
+.front-img , .back-img{
+    position: absolute;
+}
+.front-img {
+    z-index: 1;
+    backface-visibility: hidden;
+}
+.back-img{
+    transform: rotateY(180deg);
+}
+
+.product-img:hover{
+    transform: rotateY(180deg)
+}
+
+.product-item .team-icon {
+    position: relative;
+    top: -130px ;
+    left: 60px;
+    visibility: hidden;
+    transition: all .8 ease-out 1.2s;
+}
+
+.product-item .team-icon i{
+    color: #bb9055;
+    padding: 5px 5px;
+    font-size: 25px;
+    border-radius: 20px;
+    
+}
+.product-img:hover + .team-icon {
+    visibility: visible;
+}
+
+
